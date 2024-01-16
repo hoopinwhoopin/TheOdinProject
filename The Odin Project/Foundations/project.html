@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product Page</title>
+<link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity = "sha384-  JcKb8q3iqJNl4P6w6Vr1Zo06KSDZIpeJlqO5SKfXmLlB0ExlPbX3jBf  5KtEULTy" crossorigin = "anonymous">
+       <link href = "style.css" rel = "stylesheet">
+</head>
+<body>
+    <div class=" ="row">
+
+
+        <div class ="col">
+            <div class = "leftside">
+               <div class="product-page">
+        
+               <div class="carousel">
+                <!-- Add your carousel images here -->
+              <img src="image1.jpg" alt="Image 1">
+               <img src="image2.jpg" alt="Image 2">
+               <!-- Add your carousel controls here -->
+               <button class="prev">Prev</button>
+                <button class="next">Next</button>
+                </div>
+              </div>  
+              </div>
+              </div>
+               </div>
+        
+             <div class ="col">
+              <div class =rightside>
+               
+              <div class="product-details">
+              <h1>Product Title</h1>
+                <!-- Quantity Selector -->
+               <div class="quantity-selector">
+                <button class="decrease">-</button>
+                <input type="number" value="1" class="quantity">
+                <button class="increase">+</button>
+            </div>
+            <!-- Buttons -->
+            <button>Add to Cart</button>
+            <button>Buy Now</button>
+            <!-- Accordion -->
+            <div class="accordion">
+                <div class="accordion-item">
+                    <h2>Description</h2>
+                    <div class="accordion-content">
+                        <!-- Add your description here -->
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2>Harvest</h2>
+                    <div class="accordion-content">
+                        <!-- Add your harvest details here -->
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2>Use Case</h2>
+                    <div class="accordion-content">
+                        <!-- Add your use case here -->
+                   </div>
+                
+                 </div>
+                  </div>
+                   </div>
+         
+                  </div>
+                  </div>
+    <script>
+        // Carousel functionality
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("carousel");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+        // Quantity selector functionality
+        var decreaseButton = document.querySelector('.decrease');
+        var increaseButton = document.querySelector('.increase');
+        var quantityInput = document.querySelector('.quantity');
+
+        decreaseButton.addEventListener('click', function() {
+            var currentQuantity = parseInt(quantityInput.value, 10);
+            if (currentQuantity > 1) {
+                quantityInput.value = currentQuantity - 1;
+            }
+        });
+
+        increaseButton.addEventListener('click', function() {
+            var currentQuantity = parseInt(quantityInput.value, 10);
+            quantityInput.value = currentQuantity + 1;
+        });
+    </script>
+</body>
+</html>
