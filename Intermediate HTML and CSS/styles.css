@@ -1,0 +1,12 @@
+@font-face { 
+    font-family: 'MyFont'; 
+    src: 
+        url('Users\vedan\OneDrive\Desktop\The Odin Project\Intermediate HTML and CSS\fonts\Norse-Bold.otf')  
+        format('opentype'); 
+    font-weight: normal; 
+    font-style: normal; 
+} 
+  
+body { 
+    font-family: 'Norse-Bold.otf';
+    ; 

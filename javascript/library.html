@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library</title>
+    <style>
+        /* Add some basic styling here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .delete-button {
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Library</h1>
+    
+    <form id="add-book-form">
+        <label for="title">Title:</label>
+        <input type="text" id="title" required>
+        <label for="author">Author:</label>
+        <input type="text" id="author" required>
+        <button type="submit">Add Book</button>
+    </form>
+    
+    <ul id="book-list">
+        <!-- Books will be dynamically added here -->
+    </ul>
+    
+    <script src="library.js"></script>
+</body>
+</html>
