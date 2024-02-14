@@ -1,0 +1,11 @@
+{
+  "appId": "io.ionic.TicTacToe",
+  "appName": "Tic-Tac-Toe",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "dist",
+  "cordova": {},
+  "server": {
+    "androidScheme": "https"
+  }
+}

@@ -1,0 +1,287 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+.Item{
+    /* padding-left: 100px;
+    padding-right: 100px; */
+}
+.rating{
+    display: flex;
+    flex-direction: row;
+    gap : 10px;
+    align-items: center;
+    width: 35%;
+    border: 1px solid black;
+    padding: 2px;
+    padding-left: 10px;
+}
+.taxes{
+    color: #03a689;
+    font-size: 12px;
+}
+.size{
+    display: flex;
+    flex-direction: row;
+    gap : 10px;
+    align-items: center;
+    padding: 2px;
+    padding-left: 0px;
+}
+.size button{
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+}
+.AddtoBag{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+    gap : 10px;
+    align-items: center;
+    padding: 2px;
+    padding-left: 0px;
+}
+.AddtoBag button{
+    border: 1px solid black;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    &:hover{
+        background-color: white;
+        color: black;
+    }
+}
+ul{
+    list-style-type: none;
+    font-weight: 25;
+    font-size: 12px;
+    padding:0px;
+}
+li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.Delivery{
+    display: flex;
+    flex-direction: row;
+    gap : 10px;
+    align-items: center;
+    padding: 2px;
+    padding-left: 0px;
+}
+#Input{
+    border: 1px solid black;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    width: 300px;
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+}
+#Input:hover{
+    cursor: pointer;
+}
+#Input:focus{
+    outline: none;
+}
+#but{
+    border: 1px solid black;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    width: 300px;
+    &:hover{
+        background-color: white;
+        color: black;
+    }
+}
+
+#but:hover{
+    cursor: pointer;
+}
+#but:focus{
+    outline: none;
+}
+.Check{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap : 10px;
+    align-items: center;
+    padding: 2px;
+    padding-left: 0px;
+}
+.Navbar{
+    display: flex;
+    flex-direction: row;
+    gap : 10px;
+    align-items: center;
+    justify-content: space-between;
+    height :100px;
+    background-color: black;
+    padding-left: 0px;
+    font-family: "Lava";
+    color: white;
+    font-size: 48px;
+    padding : 10px 20px 10px ;
+}
+.categories{
+    display: flex;
+    flex-direction: row;
+    gap : 10px;
+    align-items: center;
+}
+.search > input{
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    width: 300px;
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+}
+.cart> button{
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.cart.search{
+    display: flex;
+    align-items: center;
+    padding-left: 02px;
+}
+.cart{
+    display: flex;
+    flex-direction: row;
+}
+.LandingText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 0px;
+    color: black;
+    padding : 10px 20px 10px ;
+}
+.LandingText >h1 {
+    font-size: 48px;
+    display: flex;
+    width: 60%;
+    text-align: center;
+}
+.LandingText >p {
+    font-size: 24px;
+    display: flex;
+    width: 60%;
+    text-align: center;
+}
+.LandingText>a>button{
+    border: 1px solid black;
+    padding: 10px 40px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:4px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.LandingImage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 0px;
+    padding : 10px 20px 10px ;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+.LandingImage>img{
+    width: 100%;
+    height: 100%;
+    
+}
+.GalleryHome{
+    display: grid;
+    grid-column-gap: 10px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+Link{
+    text-decoration: none;
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: white;
+
+}
+.cardInfo>button{
+    border: 1px solid black;
+    padding: 10px 40px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:4px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    &:hover{
+        cursor: pointer;
+    }
+
+}
+@font-face {
+    font-family: "Lava";
+    src: url("./assets/Fonts/ShadowHand.otf");
+}
